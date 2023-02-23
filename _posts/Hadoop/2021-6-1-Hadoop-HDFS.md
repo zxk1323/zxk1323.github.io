@@ -10,7 +10,7 @@ tags:
 
 ### HDFS架构
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/28253684/1661916050317-344bce7c-20a4-4b0d-bc40-031f5bfd4c2e.png)
+![img](../../images/Blog/Hadoop-1.png)
 
 - Client：客户端
 
@@ -43,13 +43,13 @@ HDFS中的文件在物理上分块存储(Block),块的大小可以通过配置df
 
 默认大小Hadoop2.x/3.x版本中为128M，1.x版本为64M。
 
-![img](https://cdn.nlark.com/yuque/0/2022/jpeg/28253684/1661876134943-268ba6f8-bf15-4a8a-8b52-67eb553ccdb6.jpeg)
+![img](../../images/Blog/Hadoop-2.png)
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/28253684/1661876178364-13695374-128a-4540-b66f-1794074fa127.png)
+![img](../../images/Blog/Hadoop-3.png)
 
 ### HDFS写数据流程
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/28253684/1661876265659-c3440599-df31-49bd-801d-42a6cdb40435.png)（1）客户端通过Distributed FileSystem模块向NameNode请求上传文件，NameNode检查目标文件是否已存在，父目录是否存在。
+![img](../../images/Blog/Hadoop-4.png)（1）客户端通过Distributed FileSystem模块向NameNode请求上传文件，NameNode检查目标文件是否已存在，父目录是否存在。
 
 （2）NameNode返回是否可以上传。
 
@@ -67,7 +67,7 @@ HDFS中的文件在物理上分块存储(Block),块的大小可以通过配置df
 
 ### HDFS读数据流程
 
-![img](https://cdn.nlark.com/yuque/0/2022/png/28253684/1661876531731-ec9bab6b-42ac-4b21-8650-142b9be58d8a.png)（1）客户端通过DistributedFileSystem向NameNode请求下载文件，NameNode通过查询元数据，找到文件块所在的DataNode地址。
+![img](../../images/Blog/Hadoop-5.png)（1）客户端通过DistributedFileSystem向NameNode请求下载文件，NameNode通过查询元数据，找到文件块所在的DataNode地址。
 
 （2）挑选一台DataNode（就近原则，然后随机）服务器，请求读取数据。
 
