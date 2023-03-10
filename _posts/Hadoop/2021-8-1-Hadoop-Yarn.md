@@ -1,6 +1,6 @@
 ---
 title: 'Hadoop-Yarn'
-date: 2021-07-01
+date: 2021-08-01
 permalink: /posts/2021/06/Hadoop-Yarn/
 tags:
   - Hadoop
