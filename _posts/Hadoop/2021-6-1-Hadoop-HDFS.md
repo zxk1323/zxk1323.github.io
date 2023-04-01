@@ -10,6 +10,10 @@ tags:
 
 ### HDFS架构
 
+![img](../img/Blog/Hadoop/Hadoop-1.png)
+
+
+
 ![img](/images/Blog/Hadoop/Hadoop-1.png)
 
 - Client：客户端
